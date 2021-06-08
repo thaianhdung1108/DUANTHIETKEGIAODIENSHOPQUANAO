@@ -1,0 +1,244 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Login || 69 Fashion</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Place favicon.ico in the root directory -->
+        <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+       
+        <!-- all css here -->
+        <!-- bootstrap v3.3.6 css -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <!-- animate css -->
+        <link rel="stylesheet" href="css/animate.css">
+        <!-- jquery-ui.min css -->
+        <link rel="stylesheet" href="css/jquery-ui.min.css">
+        <!-- meanmenu css -->
+        <link rel="stylesheet" href="css/meanmenu.min.css">
+        <!-- nivo slider css -->
+        <link rel="stylesheet" href="lib/css/nivo-slider.css" />
+        <!-- owl.carousel css -->
+        <link rel="stylesheet" href="css/owl.carousel.css">
+        <!-- Simple Lence css --> 
+        <link rel="stylesheet" href="css/jquery.simpleLens.css">
+        <!-- font-awesome css -->
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <!-- fontello css -->
+        <link rel="stylesheet" href="css/fontello.css">
+        <!-- latofonts css -->
+        <link rel="stylesheet" href="css/latofonts.css">
+        <!-- style css -->
+        <link rel="stylesheet" href="style.css">
+        <!-- responsive css -->
+        <link rel="stylesheet" href="css/responsive.css">
+        <!-- modernizr js -->
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+		<!--angular-->
+		<script src="js/angular.min.js"></script>
+		
+    </head>
+    <body ng-app = "myapp">
+		<script>
+			var app = angular.module("myapp",[]);
+			
+		</script>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+
+       
+        <!-- Page-Banner-AREA START -->
+        <section class="page-banner-area">
+			<div class="col-xs-12">
+				<div class="page-banner-brief">
+					<h2>Registration</h2>
+					<nav>
+						<ul>
+							<li><a href="#">Home</a></li>
+							<li class="active"><a href="#">Registration</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</section>
+        <!-- Page-Banner-AREA END -->
+        <section class="content">
+			<!-- LOGIN-AREA START -->
+			<div class="lognin-area">
+				<div class="container">
+					<div class="row">
+						<!-- Registered-Customers Start -->
+						<div class="col-md-6">
+							<form action="#">
+								<div class="registered-customers margin-65">
+									<h2 class="title-3">REGISTERED CUSTOMERS</h2>
+									<div class="registered">
+										<p>If you have an account with us, Please log in.</p>
+										<div class="row">
+											<div class="col-md-12">
+												<input type="text" class="custom-form" name="email" placeholder="Email Address" />
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-md-12">
+												<input type="password" class="custom-form" placeholder="Password" />
+											</div>
+										</div>
+										<p><label class="forgot"><a href="#">Forgot our password?</a></label></p>
+										<input type="submit" class="custom-submit-2" value="login" />
+									</div>
+								</div>
+							</form>
+						</div>
+						<!-- Registered-Customers End -->
+						<div class="col-md-6">
+							<form  name = "frmBonus1">
+								<div class="new-customers margin-65">
+									<h2 class="title-3">NEW CUSTOMERS</h2>
+									<div class="row">
+										
+										<div class="col-sm-12">
+											<span ng-show="frmBonus1.txtFullname.$invalid" style="color: red;">
+												Please enter the full name no more than 25 characters
+											</span>
+											<input class="custom-form" placeholder="FullName" 
+											ng-model = "fullname" name = "txtFullname" maxlength="25" required/>
+											
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-sm-12">
+											<span ng-show="frmBonus1.txtAddress.$invalid" style="color: red;">
+												Please enter your address
+											</span>
+											<input  class="custom-form" placeholder="Address" ng-model ="address" name="txtAddress" required/>
+										</div>
+									</div>
+								
+									
+									<div class="row">
+										<div class="col-sm-12">
+											<span ng-show="frmBonus1.txtEmail.$invalid" style="color: red;">
+												Please enter correct email format
+											</span>
+											<input class="custom-form" type="email" placeholder="Email" name="txtEmail" ng-model = "email" required/>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-sm-12">
+											<span ng-show="frmBonus1.txtPassword.$invalid" style="color: red;">
+												Please enter a password with uppercase word
+											</span>
+											<input class="custom-form" type="password" placeholder="Password" name = "txtPassword" ng-model ="password" maxlength="15"
+											pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required />
+										</div>
+									</div>
+									
+									
+									<div class="row">
+										<div class="col-sm-6">
+											<input type="submit" class="custom-form custom-submit no-margin" value="register" />
+											<h4 ng-show ="frmBonus.$valid">Sign Up Success</h4>
+										</div>
+										<div class="col-sm-6">
+											<input type="submit" class="custom-form custom-submit no-margin" value="clear" />
+										</div>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- LOGIN-AREA END -->
+			<!-- BRANDS-LOGO-AREA START -->
+			<div class="brands-logo-area">
+				<div class="container">
+					<div class="row">
+						<div class="active-brands-logo">
+							<!-- Single-Brand-Logo Start -->
+							<div class="col-md-12">
+								<div class="single-brand-logo">
+									<img src="img/brand/1.png" alt="" />
+								</div>
+							</div>
+							<!-- Single-Brand-Logo End -->
+							<!-- Single-Brand-Logo Start -->
+							<div class="col-md-12">
+								<div class="single-brand-logo">
+									<img src="img/brand/2.png" alt="" />
+								</div>
+							</div>
+							<!-- Single-Brand-Logo End -->
+							<!-- Single-Brand-Logo Start -->
+							<div class="col-md-12">
+								<div class="single-brand-logo">
+									<img src="img/brand/3.png" alt="" />
+								</div>
+							</div>
+							<!-- Single-Brand-Logo End -->
+							<!-- Single-Brand-Logo Start -->
+							<div class="col-md-12">
+								<div class="single-brand-logo">
+									<img src="img/brand/4.png" alt="" />
+								</div>
+							</div>
+							<!-- Single-Brand-Logo End -->
+							<!-- Single-Brand-Logo Start -->
+							<div class="col-md-12">
+								<div class="single-brand-logo">
+									<img src="img/brand/5.png" alt="" />
+								</div>
+							</div>
+							<!-- Single-Brand-Logo End -->
+							<!-- Single-Brand-Logo Start -->
+							<div class="col-md-12">
+								<div class="single-brand-logo">
+									<img src="img/brand/6.png" alt="" />
+								</div>
+							</div>
+							<!-- Single-Brand-Logo End -->
+							<!-- Single-Brand-Logo Start -->
+							<div class="col-md-12">
+								<div class="single-brand-logo">
+									<img src="img/brand/1.png" alt="" />
+								</div>
+							</div>
+							<!-- Single-Brand-Logo End -->
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- BRANDS-LOGO-AREA END -->
+        </section>
+	
+        <!-- all js here -->
+        <!-- jquery latest version -->
+        <script src="js/vendor/jquery-1.12.0.min.js"></script>
+        <!-- bootstrap js -->
+        <script src="js/bootstrap.min.js"></script>
+        <!-- Nivo slider js -->        
+        <script src="lib/js/jquery.nivo.slider.js"></script>
+        <!-- owl.carousel js -->
+        <script src="js/owl.carousel.min.js"></script>
+        <!-- jquery-ui js -->
+        <script src="js/jquery-ui.min.js"></script>
+        <!-- countdon.min js -->
+        <script src="js/countdon.min.js"></script>
+        <!-- jquery.meanmenu js -->
+        <script src="js/jquery.meanmenu.js"></script>
+        <!-- Simple Lence JS -->
+        <script src="js/jquery.simpleLens.min.js"></script>
+        <!-- wow js -->
+        <script src="js/wow.min.js"></script>
+        <!-- plugins js -->
+        <script src="js/plugins.js"></script>
+        <!-- main js -->
+        <script src="js/main.js"></script>
+    </body>
+</html>

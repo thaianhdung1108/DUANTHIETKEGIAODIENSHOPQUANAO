@@ -1,0 +1,67 @@
+[
+    {
+        
+        "new": "new",
+        "parcent": "-45%",
+        "image1": "13.jpg",
+        "image2": "13_2.jpg",
+        "name": "T-SHIRT",
+        "price": "90.00"
+    },
+    {
+        "new": "sale",
+        "parcent": "-45%",
+        "image1": "14.jpg",
+        "image2": "14_2.jpg",
+        "name": "DRESS",
+        "price": "40.00"
+    },
+    {
+        "new": "sale",
+        "parcent": "-65%",
+        "image1": "15.jpg",
+        "image2": "15_2.jpg",
+        "name": "T-SHIRT",
+        "price": "90.00"
+    },
+    {
+        "new": "new",
+        "parcent": "-55%",
+        "image1": "16.jpg",
+        "image2": "16_2.jpg",
+        "name": "T-SHIRT",
+        "price": "30.00"
+    },
+    {
+        "new": "sale",
+        "parcent": "-65%",
+        "image1": "17.jpg",
+        "image2": "17_2.jpg",
+        "name": "BLACK SHIRT",
+        "price": "70.00"
+    },
+    {
+        "new": "new",
+        "parcent": "-45%",
+        "image1": "18.jpg",
+        "image2": "18_2.jpg",
+        "name": "T-SHIRT",
+        "price": "80.00"
+    },
+    {
+        "new": "sale",
+        "parcent": "-45%",
+        "image1": "19.jpg",
+        "image2": "19_2.jpg",
+        "name": "DRESS",
+        "price": "90.00"
+    },
+    {
+        "new": "new",
+        "parcent": "-55%",
+        "image1": "20.jpg",
+        "image2": "20_2.gif",
+        "name": "SHIRT",
+        "price": "90.00"
+    }
+]
